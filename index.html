@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="hsfavicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <title>Hartaj Singh | Web developer | Entrepreneur</title>
+  </head>
+  <body>
+    <section class="homePage">
+        <div class="page">
+      <div class="aboutStructre">
+        <div class="aboutData" id="aboutdata">
+          <div class="aboutHeader">
+            <h3>About Me</h3>
+            <button class="closeButton" onclick="hideAbout()">
+              <img src="./close.svg" alt="" />
+            </button>
+          </div>
+          <div class="data">
+            <div class="dataHead">
+             <h2 class="terminalLikeText">
+                     Hartaj Singh Sidhu@ ~/About me $ 
+                    <span class="blinkIcon" id="blink"> | </span>
+                </h2>
+            </div>
+            <div class="mainData">
+               <img src="./Hartaj Singh Sidhu.jpg" alt="My pic" class="myPic" />
+              <p>
+                So as you already know my name <span class="nameHead"></span>,I
+                am Currenly mastering full-stack web development and business
+                management .So over last year, I’ve invested time in working on
+                what interests me .I recently worked on project of Instagram
+                clone and a few extra exciting projects,you could take a look at
+                my Github also . I even have additionally try and learn about
+                Businesses and Finances.
+              </p>
+            </div>
+            <div class="datacards">
+              <div class="skillcard">
+                <div class="skillcardHead"> <h2>Skills</h2></div>
+                <div class="skillcardSubHeader" style="color:var(--secondary-color)"> <div>Skills</div> Effeciency</div>
+                <div class="skillcardDetails">
+                  <div class="skills">
+                    <div class="skillReact" style="font-size: 13px;">  
+                       <i class="fab fa-react fa-lg" style="color: var(--secondary-color);"></i>
+                        --React
+                     </div>
+                    <div class="skillHTML" style="font-size: 13px;">
+                            <i class="fab fa-html5 fa-lg"  style="color: var(--secondary-color)"></i>
+                        --HTML
+                    </div>
+                    <div class="skillCSS" style="font-size: 13px;">
+                          <i class="fab fa-css3-alt fa-lg " style="color: var(--secondary-color)"  ></i>
+                        --CSS
+                    </div>
+                    <div class="skillJavaScript" style="font-size: 13px;">
+                          <i  class="fab fa-js fa-lg" style="color: var(--secondary-color)" ></i>
+                        --Javascript
+                    </div>
+                    <div class="skillNodeJs" style="font-size: 13px;">
+                           <i class="fab fa-node-js fa-lg"  style="color : var(--secondary-color)"
+                        ></i>
+                        --node js
+                    </div>
+                    <div class="skillMongoDb" style="font-size: 13px;">
+                           <i class="fas fa-database fa-lg"  style="color : var(--secondary-color)"
+                        ></i>
+                        --mongoDb
+                    </div>
+                  </div>
+                  <div class="Effeciency">
+                      <div style="color: var(--secondary-color)">80%</div>
+                      <div style="color:var(--secondary-color)">95%</div>
+                      <div style="color:var(--secondary-color)">90%</div>
+                      <div style="color:var(--secondary-color)">75%</div>
+                      <div style="color:var(--secondary-color)">80%</div>
+                      <div style="color:var(--secondary-color)">80%</div>
+                  </div>
+                </div>
+
+             <!-- card Details-->
+              </div>
+              <div class="Educationcard">
+                <div class="educationcardHead">
+                  <h3>Education</h3>
+                </div>
+                <div class="educationcardDetails">
+                  <div class="educationcardsubheader"> 
+                    <i class="fas fa-school"></i> Formal Education
+                  </div>
+                  <div class="tradtionalEducation">
+                    <div class="edu">   <span style="color:var(--secondary-color)">Passed</span> - 10th
+                        class CICSE</div>
+                    <div class="edu">
+                        <span style="color:var(--secondary-color)">Currently</span> -
+                        non-med 11th class ISC
+                    </div>
+                  </div>
+                 <div class="educationcardsubheader"> 
+                    Self Taught Education
+                 </div>
+                 <div class="selftaughtEducation">
+                      <div className="education"> Entrepreneurship</div>
+                      <div className="education">Finance</div>
+                      <div className="education">Business Management</div>
+                      <div className="education">Leadership</div>
+                      <div className="education">Programming</div>
+                 </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="terminalStructure">
+        <div class="buttonLinks">
+          <button class="aboutButton" onclick="displayAbout()">
+            <a><h3>/about me</h3></a>
+          </button>
+          <button class="aboutButton" onclick="displayContact()">
+            <a><h3>/contact me</h3></a>
+          </button>
+        </div>
+        <div class="mainHeader">
+          <h2 class="terminalLikeText">
+            Hartaj Singh Sidhu@ ~ $
+            <span class="blinkIcon" id="blink"> | </span>
+          </h2>
+        </div>
+        <div class="socialLinks">
+          <div class="Header"><h3>Follow me -</h3></div>
+          <div class="Links">
+            <div class="Instagram">
+         <a href="https://www.instagram.com/thehartajsingh/" target="_blank"
+              >   <i class="fab fa-instagram" style="color:var(--secondary-color)"></i> Instagram</a
+            >
+            </div>
+            <div class="linkedin">
+            <a
+              href="https://www.linkedin.com/in/hartaj-singh-sidhu-9068661ba/"
+              target="_blank"
+              > <i class="fab fa-linkedin" style="color:var(--secondary-color)"></i> Linkedin</a
+            >
+            </div>
+            <div class="github">
+            <a href="https://www.github.com/Hartaj-singh-dev" target="_blank"
+              ><i class="fab fa-github" style="color:var(--secondary-color)"></i> Github</a
+            >
+            </div>
+            <div class="discord">
+            <a
+              href="https://discordapp.com/users/772455850392027147"
+              target="_blank"
+              ><i class="fab fa-discord" style="color:var(--secondary-color)"></i> Discord</a
+            >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contactStructre">
+        <div class="contactData" id="contactdata">
+          <div class="contactHeader">
+            <h3>Contact me</h3>
+            <button class="closeButton" onclick="hideContact()">
+              <img src="./close.svg" alt="" />
+            </button>
+          </div>
+          <div class="contactsubHeader">
+               <h2 class="terminalLikeText">
+                     Hartaj Singh Sidhu@ ~/Contact me $ 
+                    <span class="blinkIcon" id="blink"> | </span>
+                </h2>
+          </div>
+          <div class="getinTouch">
+            <div class="Header"> <h2>Get In Touch --</h2></div>
+
+            <form method="POST">
+              <div class="form">
+              <div class="formInput">
+                <div class="label">
+                  <label for="nameinput">Name</label>
+                </div>
+                <input type="text" name="nameinput" class="nameinput" onchange="enterName(event)">
+              </div>
+              <div class="formInput">
+                <div class="label">
+                <label for="emailinput">Email</label>
+                </div>
+                <input type="text" name="emailinput" class="emailinput" onchange="enterEmail(event)">
+              </div>
+              <div class="formInput">
+                <div class="label">
+                <label for="phoneinput">Phone</label>
+                </div>
+                <input type="text" name="phoneinput" class="phoneinput" onchange="enterPhone(event)">
+              </div>
+              <div class="msgInput">
+                <div class="label">
+                <label for="msginput">Message</label>
+                </div>
+                <textarea name="msginput" class="msginput" onchange="enterMessage(event)"></textarea>
+              </div>
+              <div class="submitbutton">
+                <button type="submit" onclick="sendData(event)">Send</button>
+                <div class="error" id='errorHead'></div>
+              </div>
+            </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="footer">
+      <h4 class="Rights">@2021, Hartaj Singh Production . All rights reserved</h4>
+       </div>
+    </section>
+    <script src="./index.js"></script>
+  </body>
+</html>
