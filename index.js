@@ -1,5 +1,9 @@
 const data ={name:"",email:"",phone:"",message:""}
-const {name ,email ,phone,message} =data
+
+document.getElementsByClassName('nameinput').value =data.name
+document.getElementsByClassName('emailinput').value =data.email
+document.getElementsByClassName('phoneinput').value =data.phone
+
 
 const displayAbout =()=>{
      document.getElementById('aboutdata').style.display = "flex";
@@ -22,11 +26,13 @@ const hideContact = ()=>{
 const enterPhone =(event)=>{
      const value = event.target.value;
      console.log(value);
+document.getElementsByClassName('phoneinput').value = value
      data.phone = value;
 }
 
 const enterName = (event)=>{
      const value = event.target.value;
+    document.getElementsByClassName('nameinput').value = value
      console.log(value);
      data.name = value
 }
@@ -34,6 +40,7 @@ const enterName = (event)=>{
 const enterEmail = (event)=>{
      const value = event.target.value;
      console.log(value);
+     document.getElementsByClassName('emailinput').value = value
      data.email =value
 }
 
@@ -51,7 +58,12 @@ const sendData =(event)=>{
      if(!name || !email || !phone || !message){
           document.getElementById('errorHead').innerHTML = "<h5>Sorry Something is missing </h5>";
      }else{
-      document.getElementById('errorHead').innerHTML = " ";
+       document.getElementsByClassName('nameinput').value =" ";
+       document.getElementsByClassName('emailinput').value =" ";
+       document.getElementsByClassName('phoneinput').value = " ";
+
+
+     document.getElementById('errorHead').innerHTML = "<h5></h5>";
      fetch("https://hartajsingh.herokuapp.com/postData",{
           mode:'cors',
           method:"POST",
